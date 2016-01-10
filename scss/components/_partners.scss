@@ -1,0 +1,32 @@
+.partners {
+    padding: $padding-page-def;
+    background: $bg-light;
+    margin-bottom: 20px;
+    font-family: $font-family-lato-regular;
+    color: $inverse-text-color;
+    font-size: $font-size-default;
+    h3,
+    .h3 {
+        color: inherit;
+        font-family: $font-family-lato-regular;
+        text-align: center;
+        margin-bottom: 32px;
+        color: $brand-text-color-light;
+    }
+    table.partners {
+        background: none;
+        td {
+            @include respond-to(medium-low) {
+                display: table;
+                margin: 20px 0 20px;
+                width: 100%;
+                text-align: center;
+                padding: 25px 0px 25px 0px;
+            }
+            padding: 5px 0px 5px 0px;
+        }
+        td:nth-child(odd) {
+            padding: 15px 40px 15px 0;
+        }
+    }
+}

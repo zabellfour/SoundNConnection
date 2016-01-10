@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <a href="#" class="logo__link">SoundConnection</a>
+            </h1>
+            <div class="side-block">
+                <nav class="side-block__navigation">
+                    <ul class="side-block__navigation__list">
+                        <li class="side-block__navigation__list__element">
+                            <a href="main.html" class="side-block__navigation__list__element__link">accueil</a>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="#" class="side-block__navigation__list__element__link" data-toggle="modal" data-target="#contact-us">contact</a>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="faq.html" class="side-block__navigation__list__element__link">aide</a>
+                        </li>
+                        <li class="side-block__navigation__list__element side-block__navigation__list__element--dropdown">
+                            <a href="#" class="side-block__navigation__list__element__link">se connecter</a>
+                            <form action="#">
+                                <div class="drop">
+                                    <label class="drop__label">Pseudo</label>
+                                    <input name="login" class="drop__input" type="text" value="">
+                                    <label class="drop__label">Mot de passe</label>
+                                    <input name="pass" class="drop__input" type="password" value="">
+                                    <button class="button button--left">Se connecter</button>
+                                    <a href="#" class="drop__link" data-toggle="modal" data-target="#forgot-pass">oublié?</a>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="side-block__navigation__list__element side-block__navigation__list__element--dn">
+                            <a href="#" class="side-block__navigation__list__element__link side-block__navigation__list__element__link--exit">déconnexion</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="registration-form.html" class="button  button--big">Publie votre annonce</a>
+                <a href="profil-modifier.html" class="button button--dn button--big">Accès à votre
+                profil</a>
+            </div>
+        </header>
+        <div class="category">
+            <h2 class="h2">JE CHERCHE</h2>
+            <ul class="category__list">
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN PROF</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN ELEVE</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN GROUPE</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN MUSICIEN</a>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <div class="registration registration-page">
+                <h3 class="h3">Formulaire de contact</h3>
+                <p><strong>
+    Envoyer un message à kakis</strong></p>
+                <p>&nbsp;</p>
+                <form action="" method="post" enctype="multipart/form-data" name="contact">
+                    <div class="reg-form">
+                        <div class="col-wrp">
+                            <div class="reg-form__col reg-form__col--fixed">
+                                <div class="reg-form__col__row">
+                                    <label class="reg-form__col__label">Votre Pseudo ou nom *</label>
+                                    <input class="reg-form__col__input" type="text" value="" required="" name="pseudo">
+                                </div>
+                                <div class="reg-form__col__row">
+                                    <label class="reg-form__col__label">Votre adresse Email *</label>
+                                    <input class="reg-form__col__input" type="email" value="" required="" name="mail2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv-form">
+                        <div class="reg-form__col__row">
+                            <label class="reg-form__col__label reg-form__col__label--l-indent">Votre message *</label>
+                            <textarea class="reg-form__col__input reg-form__col__input__textarea reg-form__col__input--radius" required="" name="message"> </textarea>
+                        </div>
+                    </div>
+                    <button class="button button--valider  button--default" value="Valider" type="submit">Valider</button>
+                    <input name="check_mail" type="hidden" value="ok">
+                </form>
+                <p>
+                </p>
+                <p>&nbsp;</p>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="copy">Copyright 2012 Sound'n Connection</div>
+        <nav class="footer-nav">
+            <ul class="footer-nav__list">
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Accueil</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Nous contacter</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Aide</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link"> Mention légales</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link"> Partenaires</a></li>
+            </ul>
+        </nav>
+        <ul class="social-list">
+            <li class="social-list__element">
+                <a class="icon icon-twitter-square" href="#"></a>
+            </li>
+            <li class="social-list__element">
+                <a class="icon icon-facebook" href="#"></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Modal -->
+    <!-- Modal forgop pass-->
+    <div class="modal fade" id="forgot-pass" tabindex="-1" role="dialog" aria-labelledby="forgot-pass">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-universal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Mot de passe oublié</h6>
+                </div>
+                <div class="modal-body">
+                    <p>Envoyer votre mot de passe sur votre mail , remplir le formulaire :</p>
+                    <form action="#">
+                        <div class="drop drop--visible">
+                            <label class="drop__label">Nom/ Pseudo *</label>
+                            <input name="login" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Email *</label>
+                            <input name="mail" class="drop__input" type="email" value="" required>
+                            <div class="button-wrapper">
+                                <button class="button button--left">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contact-us-->
+    <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="contact-us">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-universal modal-universal--contact">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Formulaire de contact</h6>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="drop drop--visible">
+                            <label class="drop__label">Nom/ Pseudo *</label>
+                            <input name="pseudo" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Email *</label>
+                            <input name="mail2" class="drop__input" type="email" value="" required>
+                            <label class="drop__label">Sujet *</label>
+                            <input name="sujet" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Votre message *</label>
+                            <textarea name="message" class="drop__input" required></textarea>
+                            <div class="button-wrapper">
+                                <button class="button button--left">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+     <script src="js/upload_check.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.registration-page {
+    text-align: center;
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+        .reg-form {
+            .col-wrp {
+                width: 100%;
+                .reg-form__col--fixed{
+                	width: 100%;
+                }
+            }
+          
+        }
+          .button--valider{
+            	width: 100%;
+            }
+    }
+}

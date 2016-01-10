@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+      <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+               <a href="#" class="logo__link">SoundConnection</a>
+            </h1>
+            <div class="side-block">
+                <nav class="side-block__navigation">
+                    <ul class="side-block__navigation__list">
+                        <li class="side-block__navigation__list__element">
+                            <a href="main.html" class="side-block__navigation__list__element__link">accueil</a>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="#" class="side-block__navigation__list__element__link" data-toggle="modal" data-target="#contact-us">contact</a>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="faq.html" class="side-block__navigation__list__element__link">aide</a>
+                        </li>
+                        <li class="side-block__navigation__list__element side-block__navigation__list__element--dropdown">
+                            <a href="#" class="side-block__navigation__list__element__link">se connecter</a>
+                            <form action="#">
+                                <div class="drop">
+                                    <label class="drop__label">Pseudo</label>
+                                    <input name="login" class="drop__input" type="text" value="">
+                                    <label class="drop__label">Mot de passe</label>
+                                    <input name="pass" class="drop__input" type="password" value="">
+                                    <button class="button button--left">Se connecter</button>
+                                    <a href="#" class="drop__link" data-toggle="modal" data-target="#forgot-pass">oublié?</a>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="side-block__navigation__list__element side-block__navigation__list__element--dn">
+                            <a href="#" class="side-block__navigation__list__element__link side-block__navigation__list__element__link--exit">déconnexion</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="registration-form.html" class="button  button--big">Publie votre annonce</a>
+                <a href="profil-modifier.html" class="button button--dn button--big">Accès à votre profil</a>
+            </div>
+        </header>
+        <div class="category">
+            <h2 class="h2">JE CHERCHE</h2>
+            <ul class="category__list">
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN PROF</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN ELEVE</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN GROUPE</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN MUSICIEN</a>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <div class="sidebar">
+                <div class="filter">
+                    <h4 class="h4">Recherche avancée</h4>
+                    <form action="#">
+                        <div class="form-holder">
+                            <ul class="form-holder__list">
+                                <li class="form-holder__list__element">
+                                    <label class="form-holder__list__element__label">Départements</label>
+                                    <select class="form-holder__list__element__select" name="departement">
+                                        <option value="selected">
+                                            Indifférent</option>
+                                        <option>Ain</option>
+                                        <option>Aisne</option>
+                                        <option>Allier</option>
+                                        <option>Alpes-deHauteProvence</option>
+                                        <option>Alpes-Maritimes</option>
+                                        <option>Ardèche</option>
+                                        <option>Ardennes</option>
+                                        <option>Ariège</option>
+                                        <option>Aube</option>
+                                        <option>Aude</option>
+                                        <option>Aveyron</option>
+                                        <option>Bas-Rhin</option>
+                                        <option>Bouches-du-Rhône</option>
+                                        <option>Calvados</option>
+                                        <option>Cantal</option>
+                                        <option>Charente</option>
+                                        <option>Charente-Maritime</option>
+                                        <option>Cher</option>
+                                        <option>Corrèze</option>
+                                        <option>Corse-du-Sud</option>
+                                        <option>Côte-d'Or</option>
+                                        <option>Côtes-d'Armor</option>
+                                        <option>Creuse</option>
+                                        <option>Deux-Sèvres</option>
+                                        <option>Dordogne</option>
+                                        <option>Doubs</option>
+                                        <option>Drôme</option>
+                                        <option>Essonne</option>
+                                        <option>Eure</option>
+                                        <option>Eure-et-Loir</option>
+                                        <option>Finistère</option>
+                                        <option>Gard</option>
+                                        <option>Gers</option>
+                                        <option>Gironde</option>
+                                        <option>Guadeloupe</option>
+                                        <option>Guyane</option>
+                                        <option>Haute-Corse</option>
+                                        <option>Haute-Garonne</option>
+                                        <option>Haute-Loire</option>
+                                        <option>Haute-Marne</option>
+                                        <option>Hautes-Alpes</option>
+                                        <option>Haute-Saône</option>
+                                        <option>Haute-Savoie</option>
+                                        <option>Hautes-Pyrénées</option>
+                                        <option>Haute-Vienne</option>
+                                        <option>Haut-Rhin</option>
+                                        <option>Hauts-de-Seine</option>
+                                        <option>Hérault</option>
+                                        <option>Ille-et-Vilaine</option>
+                                        <option>Indre</option>
+                                        <option>Indre-et-Loire</option>
+                                        <option>Isère</option>
+                                        <option>Jura</option>
+                                        <option>La Réunion</option>
+                                        <option>Landes</option>
+                                        <option>Loire</option>
+                                        <option>Loire-Atlantique</option>
+                                        <option>Loiret</option>
+                                        <option>Loir-et-Cher</option>
+                                        <option>Lot</option>
+                                        <option>Lot-et-Garonne</option>
+                                        <option>Lozère</option>
+                                        <option>Maine-et-Loire</option>
+                                        <option>Manche</option>
+                                        <option>Marne</option>
+                                        <option>Martinique</option>
+                                        <option>Mayenne</option>
+                                        <option>Mayotte</option>
+                                        <option>Meurthe-et-Moselle</option>
+                                        <option>Meuse</option>
+                                        <option>Morbihan</option>
+                                        <option>Moselle</option>
+                                        <option>Nièvre</option>
+                                        <option>Nord</option>
+                                        <option>Oise</option>
+                                        <option>Orne</option>
+                                        <option>Paris</option>
+                                        <option>Pas-de-Calais</option>
+                                        <option>Puy-de-Dôme</option>
+                                        <option>Pyrénées-Atlantiques</option>
+                                        <option>Pyrénées-Orientales</option>
+                                        <option>Rhône</option>
+                                        <option>Saône-et-Loire</option>
+                                        <option>Sarthe</option>
+                                        <option>Savoie</option>
+                                        <option>Seine-et-Marne</option>
+                                        <option>Seine-Maritime</option>
+                                        <option>Seine-Saint-Denis</option>
+                                        <option>Somme</option>
+                                        <option>Tarn</option>
+                                        <option>Tarn-et-Garonne</option>
+                                        <option>Territoire de Belfort</option>
+                                        <option>Val-de-Marne</option>
+                                        <option>Val-d'Oise</option>
+                                        <option>Var</option>
+                                        <option>Vaucluse</option>
+                                        <option>Vendée</option>
+                                        <option>Vienne</option>
+                                        <option>Vosges</option>
+                                        <option>Yonne</option>
+                                        <option>Yvelines</option>
+                                    </select>
+                                </li>
+                                <li class="form-holder__list__element">
+                                    <label class="form-holder__list__element__label">Ville</label>
+                                    <select class="form-holder__list__element__select" name="ville">
+                                        <option value="selected">Indifférent</option>
+                                        <option>Agen</option>
+                                        <option>Aix-en-Provence</option>
+                                        <option>Ajaccio</option>
+                                        <option>Albi</option>
+                                        <option>Alès</option>
+                                        <option>Alfortville</option>
+                                        <option>Amiens</option>
+                                        <option>Angers</option>
+                                        <option>Anglet</option>
+                                        <option>Angoulême</option>
+                                        <option>Annecy</option>
+                                        <option>Annemasse</option>
+                                        <option>Antibes</option>
+                                        <option>Antony</option>
+                                        <option>Argenteuil</option>
+                                        <option>Arles</option>
+                                        <option>Arras</option>
+                                        <option>Asnières-sur-Seine</option>
+                                        <option>Athis-Mons</option>
+                                        <option>Aubagne</option>
+                                        <option>Aubervilliers</option>
+                                        <option>Aulnay-sous-Bois</option>
+                                        <option>Auxerre</option>
+                                        <option>Avignon</option>
+                                        <option>Bagneux</option>
+                                        <option>Bagnolet</option>
+                                        <option>Bastia</option>
+                                        <option>Bayonne</option>
+                                        <option>Beauvais</option>
+                                        <option>Belfort</option>
+                                        <option>Besançon</option>
+                                        <option>Béziers</option>
+                                        <option>Blois</option>
+                                        <option>Bobigny</option>
+                                        <option>Bondy</option>
+                                        <option>Bordeaux</option>
+                                        <option>Boulogne-Billancourt</option>
+                                        <option>Boulogne-sur-Mer</option>
+                                        <option>Bourg-en-Bresse</option>
+                                        <option>Bourges</option>
+                                        <option>Brest</option>
+                                        <option>Brive-la-Gaillarde</option>
+                                        <option>Bron</option>
+                                        <option>Caen</option>
+                                        <option>Cagnes-sur-Mer</option>
+                                        <option>Calais</option>
+                                        <option>Caluire-et-Cuire</option>
+                                        <option>Cambrai</option>
+                                        <option>Cannes</option>
+                                        <option>Carcassonne</option>
+                                        <option>Castres</option>
+                                        <option>Cayenne</option>
+                                        <option>Cergy</option>
+                                        <option>Châlons-en-Champagne</option>
+                                        <option>Chalon-sur-Saône</option>
+                                        <option>Chambéry</option>
+                                        <option>Champigny-sur-Marne</option>
+                                        <option>Charleville-Mézières</option>
+                                        <option>Chartres</option>
+                                        <option>Châteauroux</option>
+                                        <option>Châtellerault</option>
+                                        <option>Châtenay-Malabry</option>
+                                        <option>Châtillon</option>
+                                        <option>Chelles</option>
+                                        <option>Cherbourg-Octeville</option>
+                                        <option>Choisy-le-Roi</option>
+                                        <option>Cholet</option>
+                                        <option>Clamart</option>
+                                        <option>Clermont-Ferrand</option>
+                                        <option>Clichy</option>
+                                        <option>Colmar</option>
+                                        <option>Colombes</option>
+                                        <option>Colomiers</option>
+                                        <option>Compiègne</option>
+                                        <option>ConflansSainteHonorine</option>
+                                        <option>Corbeil-Essonnes</option>
+                                        <option>Courbevoie</option>
+                                        <option>Creil</option>
+                                        <option>Créteil</option>
+                                        <option>Dieppe</option>
+                                        <option>Dijon</option>
+                                        <option>Douai</option>
+                                        <option>Draguignan</option>
+                                        <option>Drancy</option>
+                                        <option>Dreux</option>
+                                        <option>Dunkerque14</option>
+                                        <option>Échirolles</option>
+                                        <option>Épinal</option>
+                                        <option>Épinay-sur-Seine</option>
+                                        <option>Évreux</option>
+                                        <option>Évry</option>
+                                        <option>Fontenay-sous-Bois</option>
+                                        <option>Fort-de-France</option>
+                                        <option>Franconville</option>
+                                        <option>Fréjus</option>
+                                        <option>Gagny</option>
+                                        <option>Gap</option>
+                                        <option>Garges-lès-Gonesse</option>
+                                        <option>Gennevilliers</option>
+                                        <option>Goussainville</option>
+                                        <option>Grasse</option>
+                                        <option>Grenoble</option>
+                                        <option>Haguenau</option>
+                                        <option>Houilles</option>
+                                        <option>Hyères</option>
+                                        <option>Issy-les-Moulineaux</option>
+                                        <option>Istres</option>
+                                        <option>Ivry-sur-Seine</option>
+                                        <option>Joué-lès-Tours</option>
+                                        <option>La Ciotat</option>
+                                        <option>La Courneuve</option>
+                                        <option>La Rochelle</option>
+                                        <option>La Roche-sur-Yon</option>
+                                        <option>La Seyne-sur-Mer</option>
+                                        <option>Laval</option>
+                                        <option>Le Blanc-Mesnil</option>
+                                        <option>Le Cannet</option>
+                                        <option>Le Havre</option>
+                                        <option>Le Lamentin</option>
+                                        <option>Le Mans</option>
+                                        <option>Le Perreux-sur-Marne</option>
+                                        <option>Le Port</option>
+                                        <option>Le Tampon</option>
+                                        <option>Lens</option>
+                                        <option>Les Abymes</option>
+                                        <option>Les Mureaux</option>
+                                        <option>Levallois-Perret</option>
+                                        <option>Liévin</option>
+                                        <option>Lille13</option>
+                                        <option>Limoges</option>
+                                        <option>Livry-Gargan</option>
+                                        <option>Lorient</option>
+                                        <option>Lyon</option>
+                                        <option>Mâcon</option>
+                                        <option>Maisons-Alfort</option>
+                                        <option>Malakoff</option>
+                                        <option>Mantes-la-Jolie</option>
+                                        <option>Marcq-en-Barœul</option>
+                                        <option>Marignane</option>
+                                        <option>Marseille</option>
+                                        <option>Martigues</option>
+                                        <option>Massy</option>
+                                        <option>Maubeuge</option>
+                                        <option>Meaux</option>
+                                        <option>Melun</option>
+                                        <option>Mérignac</option>
+                                        <option>Metz</option>
+                                        <option>Meudon</option>
+                                        <option>Montauban</option>
+                                        <option>Mont-de-Marsan</option>
+                                        <option>Montélimar</option>
+                                        <option>Montigny-leBretonneux</option>
+                                        <option>Montluçon</option>
+                                        <option>Montpellier</option>
+                                        <option>Montreuil</option>
+                                        <option>Montrouge</option>
+                                        <option>Mulhouse</option>
+                                        <option>Nancy</option>
+                                        <option>Nanterre</option>
+                                        <option>Nantes</option>
+                                        <option>Narbonne</option>
+                                        <option>Neuilly-sur-Marne</option>
+                                        <option>Neuilly-sur-Seine</option>
+                                        <option>Nevers</option>
+                                        <option>Nice</option>
+                                        <option>Nîmes</option>
+                                        <option>Niort</option>
+                                        <option>Nogent-sur-Marne</option>
+                                        <option>Noisy-le-Grand</option>
+                                        <option>Noisy-le-Sec</option>
+                                        <option>Orléans</option>
+                                        <option>Palaiseau</option>
+                                        <option>Pantin</option>
+                                        <option>Paris</option>
+                                        <option>Pau</option>
+                                        <option>Perpignan</option>
+                                        <option>Pessac</option>
+                                        <option>Plaisir</option>
+                                        <option>Poissy</option>
+                                        <option>Poitiers</option>
+                                        <option>Pontault-Combault</option>
+                                        <option>Puteaux</option>
+                                        <option>Quimper</option>
+                                        <option>Reims</option>
+                                        <option>Rennes</option>
+                                        <option>Rezé</option>
+                                        <option>Roanne</option>
+                                        <option>Romans-sur-Isère</option>
+                                        <option>Rosny-sous-Bois</option>
+                                        <option>Roubaix</option>
+                                        <option>Rouen</option>
+                                        <option>Rueil-Malmaison</option>
+                                        <option>Saint-André</option>
+                                        <option>Saint-Benoît</option>
+                                        <option>Saint-Brieuc</option>
+                                        <option>Saint-Chamond</option>
+                                        <option>Saint-Denis</option>
+                                        <option>Saint-Denis</option>
+                                        <option>SainteGenevièvedesBois</option>
+                                        <option>Sainte-Marie</option>
+                                        <option>Saint-Étienne</option>
+                                        <option>Saint-Germain-en-Laye</option>
+                                        <option>Saint-Herblain</option>
+                                        <option>Saint-Joseph</option>
+                                        <option>SaintLaurent-du-Maroni</option>
+                                        <option>Saint-Leu</option>
+                                        <option>Saint-Louis</option>
+                                        <option>Saint-Malo</option>
+                                        <option>Saint-Martin-d'Hères</option>
+                                        <option>Saint-Maur-des-Fossés</option>
+                                        <option>Saint-Nazaire</option>
+                                        <option>Saint-Ouen</option>
+                                        <option>Saint-Paul</option>
+                                        <option>Saint-Pierre</option>
+                                        <option>Saint-Priest</option>
+                                        <option>Saint-Quentin</option>
+                                        <option>Saint-Raphaël</option>
+                                        <option>Salon-de-Provence</option>
+                                        <option>Sarcelles</option>
+                                        <option>Sartrouville</option>
+                                        <option>Savigny-sur-Orge</option>
+                                        <option>Schiltigheim</option>
+                                        <option>Sète</option>
+                                        <option>Sevran</option>
+                                        <option>Six-Fours-les-Plages</option>
+                                        <option>Stains</option>
+                                        <option>Strasbourg</option>
+                                        <option>Suresnes</option>
+                                        <option>Talence</option>
+                                        <option>Tarbes</option>
+                                        <option>Thionville</option>
+                                        <option>Thonon-les-Bains</option>
+                                        <option>Toulon</option>
+                                        <option>Toulouse</option>
+                                        <option>Tourcoing</option>
+                                        <option>Tours</option>
+                                        <option>Tremblay-en-France</option>
+                                        <option>Troyes</option>
+                                        <option>Valence</option>
+                                        <option>Valenciennes</option>
+                                        <option>Vandœuvre-lès-Nancy</option>
+                                        <option>Vannes</option>
+                                        <option>Vaulx-en-Velin</option>
+                                        <option>Vénissieux</option>
+                                        <option>Versailles</option>
+                                        <option>Villefranche-sur-Saône</option>
+                                        <option>Villejuif</option>
+                                        <option>Villeneuve-d'Ascq</option>
+                                        <option>VilleneuveSaintGeorges</option>
+                                        <option>Villepinte</option>
+                                        <option>Villeurbanne</option>
+                                        <option>Vincennes</option>
+                                        <option>Viry-Châtillon</option>
+                                        <option>Vitrolles</option>
+                                        <option>Vitry-sur-Seine</option>
+                                        <option>Wattrelos</option>
+                                    </select>
+                                </li>
+                                <li class="form-holder__list__element">
+                                    <label class="form-holder__list__element__label">Profil</label>
+                                    <select class="form-holder__list__element__select" name="profil">
+                                        <option value="selected">Indifférent</option>
+                                        <option value="Groupe">Groupe</option>
+                                        <option value="Musicien">Musicien</option>
+                                        <option value="Professeur">Professeur</option>
+                                        <option value="Elève">Elève</option>
+                                    </select>
+                                </li>
+                                <li class="form-holder__list__element">
+                                    <label class="form-holder__list__element__label">Instrument</label>
+                                    <select class="form-holder__list__element__select" name="instrument">
+                                        <option value="selected">Indifférent</option>
+                                        <option>Accordéon</option>
+                                        <option>Alto</option>
+                                        <option>Banjo</option>
+                                        <option>Basse</option>
+                                        <option>Basson</option>
+                                        <option>Batterie</option>
+                                        <option>Bombarde</option>
+                                        <option>Bonga</option>
+                                        <option>Chant</option>
+                                        <option>Clarinette</option>
+                                        <option>Clavier</option>
+                                        <option>Contrebasse</option>
+                                        <option>Cor</option>
+                                        <option>Cornemuse</option>
+                                        <option>Cithare</option>
+                                        <option>Didjeridoo</option>
+                                        <option>DJ</option>
+                                        <option>Djembe</option>
+                                        <option>Flûte à bec</option>
+                                        <option>Flûte de pan</option>
+                                        <option>Flûte traversière</option>
+                                        <option>Guitare</option>
+                                        <option>Harmonica</option>
+                                        <option>Harpe</option>
+                                        <option>Hautbois</option>
+                                        <option>Luth</option>
+                                        <option>Mandol</option>
+                                        <option>MAO</option>
+                                        <option>Orgue</option>
+                                        <option>Percussions</option>
+                                        <option>Piano</option>
+                                        <option>Saxophone</option>
+                                        <option>Trombone</option>
+                                        <option>Trompette</option>
+                                        <option>Tuba</option>
+                                        <option>Vielle</option>
+                                        <option>Violon</option>
+                                        <option>Violoncelle</option>
+                                    </select>
+                                </li>
+                                <li class="form-holder__list__element">
+                                    <label class="form-holder__list__element__label">Niveau</label>
+                                    <select class="form-holder__list__element__select" name="niveau">
+                                        <option value="selected">Indifférent</option>
+                                        <option value="Débutant">Débutant</option>
+                                        <option value="Intermédiaire">Intérmediaire</option>
+                                        <option value="Avancé">Avancé</option>
+                                        <option value="Professionnel">Professionnel</option>
+                                    </select>
+                                </li>
+                                <li class="form-holder__list__element">
+                                    <label class="form-holder__list__element__label">Genre musical</label>
+                                    <select class="form-holder__list__element__select" name="genremusical">
+                                        <option value="selected">Indifférent</option>
+                                        <option>A CAPPELA</option>
+                                        <option>ACID</option>
+                                        <option>ACOUSTIQUE</option>
+                                        <option>AFROBEAT</option>
+                                        <option>AMBIANCE</option>
+                                        <option>AUTRE</option>
+                                        <option>BACHATA</option>
+                                        <option>BEBOP</option>
+                                        <option>BIG BEAT</option>
+                                        <option>BLACK METAL</option>
+                                        <option>BLUE BEAT</option>
+                                        <option>BLUE GRASS</option>
+                                        <option>BLUES</option>
+                                        <option>BOOGIE</option>
+                                        <option>BOSSA NOVA</option>
+                                        <option>CAJUN</option>
+                                        <option>CALYPSO</option>
+                                        <option>CELTIQUE</option>
+                                        <option>CHANSON FRANCAISE</option>
+                                        <option>CLASSIQUE</option>
+                                        <option>COUNTRY</option>
+                                        <option>COUPE DECALE</option>
+                                        <option>CRUNK</option>
+                                        <option>DANCE</option>
+                                        <option>DANCEHALL</option>
+                                        <option>DEATH METAL</option>
+                                        <option>DEEP HOUSE</option>
+                                        <option>DIRTY SOUTH</option>
+                                        <option>DISCO</option>
+                                        <option>DRUM &amp; BASS</option>
+                                        <option>DUB</option>
+                                        <option>ELECTRO</option>
+                                        <option>EXPERIMENTAL</option>
+                                        <option>FADO</option>
+                                        <option>FLAMENCO</option>
+                                        <option>FOLK</option>
+                                        <option>FUNK</option>
+                                        <option>GOSPEL</option>
+                                        <option>GOTHIQUE</option>
+                                        <option>GRUNGE</option>
+                                        <option>HIP HOP</option>
+                                        <option>HOUSE</option>
+                                        <option>INDIE</option>
+                                        <option>INSTRUMENTAL</option>
+                                        <option>JAZZ</option>
+                                        <option>JUMPSTYLE</option>
+                                        <option>MAO</option>
+                                        <option>MERENGUE</option>
+                                        <option>METAL</option>
+                                        <option>MUSIQUE ELECT-QUE</option>
+                                        <option>NEO METAL </option>
+                                        <option>POP</option>
+                                        <option>POP-ROCK</option>
+                                        <option>PSYCHEDELIQUE</option>
+                                        <option>PUNK</option>
+                                        <option>R'N'B</option>
+                                        <option>RAGGA</option>
+                                        <option>RAÏ</option>
+                                        <option>RAP</option>
+                                        <option>REGGAE</option>
+                                        <option>REGGAETON</option>
+                                        <option>ROCK</option>
+                                        <option>ROCKABILLY</option>
+                                        <option>ROCKSTEADY</option>
+                                        <option>ROOTS</option>
+                                        <option>SALSA</option>
+                                        <option>SAMBA</option>
+                                        <option>SKA</option>
+                                        <option>SWING</option>
+                                        <option>TANGO</option>
+                                        <option>TOUS STYLES</option>
+                                        <option>VARIETE</option>
+                                        <option>WORLD</option>
+                                        <option>ZOUK</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <button name="rechercher" class="button button--left">rechercher</button>
+                            <a href="#" class="filter-clear">supprimer</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="information sidebar__information">
+                    <h5 class="h5">
+                        Inscrivez-vous                  
+                    </h5>
+                    <p>
+                        Que vous soyez un professeur de musique, un musicien à la recherche d'un groupe ou un groupe à la recherche de musiciens, inscrivez vous et postez gratuitement votre annonce!
+                    </p>
+                    <a href="#" class="button button--left button--bold">Inscription</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="board">
+                    <h3>Annonces musiciens</h3>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6"> batterie Cours de batterie - Rock/Metal dans studio probatterie Cours de batterie - Rock/Metal dans studio probatterie Cours de batterie - Rock/Metal dans studio pro</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Flûte traversière</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Professionnel</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Professeurr</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data video-icon">Alpes-de-Haute-Provence</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6"> batterie Cours de batterie - Rock/Metal dans studio pro</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Flûte traversière</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Intermédiaire</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Professeurr</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data">Alpes-de-Haute-Provence</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6">Recherche chanteur pour groupe de metal</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Guitare</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Intermédiaire</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Musicien</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data">Paris</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6">Recherche chanteur pour groupe de metal</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Guitare</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Intermédiaire</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Musicien</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data">Paris</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6">Recherche chanteur pour groupe de metal</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Guitare</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Intermédiaire</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Musicien</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data">Paris</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6">Recherche chanteur pour groupe de metal</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Guitare</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Intermédiaire</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Musicien</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data">Paris</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <div class="advertisement">
+                        <a href="#"><img class="advertisement__avatar" src="images/content/avatar.jpg" alt="avatar image"></a>
+                        <h2 class="h6">Recherche chanteur pour groupe de metal</h2>
+                        <div class="advertisement__miniblock advertisement__miniblock--date">
+                            <div class="advertisement__miniblock__name">Date:</div>
+                            <div class="advertisement__miniblock__data">28-10-2015</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Instrument :</div>
+                            <div class="advertisement__miniblock__data">Guitare</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Niveau :</div>
+                            <div class="advertisement__miniblock__data">Intermédiaire</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Profil :</div>
+                            <div class="advertisement__miniblock__data">Musicien</div>
+                        </div>
+                        <div class="advertisement__miniblock">
+                            <div class="advertisement__miniblock__name">Département :</div>
+                            <div class="advertisement__miniblock__data">Paris</div>
+                        </div>
+                        <a href="#" class="advertisement__layout-link"></a>
+                        <a href="#" class="button button--default button--left">consulter</a>
+                    </div>
+                    <nav class="pagination">
+                        <ul class="pagination__list">
+                            <li class="pagination__list__element">
+                                <a href="#" aria-label="Previous" class="pagination__list__element__link pagination__list__element__link--last">
+                                    <span aria-hidden="true">&lt;</span>
+                                </a>
+                            </li>
+                            <li class=" pagination__list__element pagination__list__element--active"><a href="#" class="pagination__list__element__link">1</a></li>
+                            <li class="pagination__list__element"><a href="#" class="pagination__list__element__link">2</a></li>
+                            <li class="pagination__list__element"><a href="#" class="pagination__list__element__link">3</a></li>
+                            <li class="pagination__list__element"><a href="#" class="pagination__list__element__link">4</a></li>
+                            <li class="pagination__list__element"><a href="#" class="pagination__list__element__link">5</a></li>
+                            <li class="pagination__list__element"><a href="#" class="pagination__list__element__link">6</a></li>
+                            <li class="pagination__list__element">
+                                <a class="pagination__list__element__link pagination__list__element__link--next" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&gt;</span>
+                                </a>
+                            </li>
+                            <li class="pagination__list__element">
+                                <a class="pagination__list__element__link" href="#">
+                                    DERNIERE PAGE
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="information main__information">
+                <h5 class="h5">
+                        Inscrivez-vous                  
+                    </h5>
+                <p>
+                    Que vous soyez un professeur de musique, un musicien à la recherche d'un groupe ou un groupe à la recherche de musiciens, inscrivez vous et postez gratuitement votre annonce!
+                </p>
+                <a href="#" class="button button--left button--bold">Inscription</a>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="copy">Copyright 2012 Sound'n Connection</div>
+        <nav class="footer-nav">
+            <ul class="footer-nav__list">
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Accueil</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Nous contacter</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Aide</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link"> Mention légales</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link"> Partenaires</a></li>
+            </ul>
+        </nav>
+        <ul class="social-list">
+            <li class="social-list__element">
+                <a class="icon icon-twitter-square" href="#"></a>
+            </li>
+            <li class="social-list__element">
+                <a class="icon icon-facebook" href="#"></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Modal -->
+    <!-- Modal forgop pass-->
+    <div class="modal fade" id="forgot-pass" tabindex="-1" role="dialog" aria-labelledby="forgot-pass">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-universal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Mot de passe oublié</h6>
+                </div>
+                <div class="modal-body">
+                    <p>Envoyer votre mot de passe sur votre mail , remplir le formulaire :</p>
+                    <form action="#">
+                        <div class="drop drop--visible">
+                            <label class="drop__label">Nom/ Pseudo *</label>
+                            <input name="login" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Email *</label>
+                            <input name="mail" class="drop__input" type="email" value="" required>
+                            <div class="button-wrapper">
+                                <button class="button button--left">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contact-us-->
+    <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="contact-us">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-universal modal-universal--contact">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Formulaire de contact</h6>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="drop drop--visible">
+                            <label class="drop__label">Nom/ Pseudo *</label>
+                            <input name="pseudo" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Email *</label>
+                            <input name="mail2" class="drop__input" type="email" value="" required>
+                            <label class="drop__label">Sujet *</label>
+                            <input name="sujet" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Votre message *</label>
+                            <textarea name="message" class="drop__input" required></textarea>
+                            <div class="button-wrapper">
+                                <button class="button button--left">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

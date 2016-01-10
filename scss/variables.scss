@@ -1,0 +1,70 @@
+
+//== Colors 
+
+/* text-colors */
+$text-color-normal:			   #333;
+$text-color:			       #e8e8e8;
+$brand-text-color-light:       #f6ae2d;
+$brand-text-color-dark:        #233d4b; 
+$brand-text-color-darken:      #002738;
+$inverse-text-color:           #fff;
+$social-color:  			   rgba(255,255,255,0.75);
+$titel-adv:					   #f0a202;
+$modal-text-color:				#bd6b0b;
+$modal-text-color-alt:			#dddddd;   
+
+/* bg-colors */
+$bg-base:                      #002738; 
+$bg-light:			 	       rgba(51,101,138,0.9);
+$bg-dark:				       rgba(38,43,47,0.95);
+$bg-category: 				   rgba(255,255,255,0.4);
+$bg-filter:					   rgba(244, 162, 7, 0.9);
+$bg-input:					   #ddd;
+$bg-modal:					   rgba(38,43,47,0.95);
+$bg-under-modal: 			   rgba(38,43,47,0.4);
+$bg-normal:					   #f1f1f1;
+$bg-advert:					   #124254;
+$bg-divider:			 	   rgba(255,255,255,0.5);
+$bg-pass-input:				   #8c8c8c;
+$bg-select-brand:              #eeb43c; 
+
+/* button-colors */
+$brand-primary:                #be140c; 
+$category:				       rgba(255,255,255,0.4);
+/* other colors */
+$border-color:			       #fff;
+$titel-color:				   #f6ae2d; 
+
+
+/* fonts */
+$font-family-sans-serif:	   'arialnarrow',arial,Helvetica, sans-serif;
+$font-family-base:             $font-family-sans-serif;
+$font-family-lato-regular:     'latoregular', "Times New Roman", arial;
+$font-family-lato-light:   	   'latolight', "Times New Roman", arial;
+$font-family-lato-bold:        'latobold', "Times New Roman", arial;
+$font-family-arial:				arial,Helvetica, sans-serif;
+/* icon fonts */
+$font-icon:					   'sound-connection-icons';
+
+$font-size-small:				12px;
+$font-size-default:             14px;
+$font-size-nav:					16px;
+$font-size-medium:				18px;
+$font-size-large:				20px;
+$font-size-titel-modal:			24px;
+
+$font-size-h2:					28px;
+$font-size-h3:					30px;
+$font-size-h4:					20px;
+$font-size-h5:					18px;
+$font-size-h6:					18px;
+
+/* media ref point */
+
+$large:							900px;
+$medium:						790px;
+$medium-sm:						600px;
+$small:							320px;		
+
+/* paddings  */
+$padding-page-def:				25px 40px 35px ;

@@ -1,0 +1,57 @@
+@import 'components/font-face';
+@import 'components/normalize';
+@import 'mixins';
+@import 'variables';
+@import 'components/layout';
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/type';
+@import 'components/sidebar';
+@import 'components/board';
+@import 'components/footer';
+
+/*---- pages ----*/
+
+
+/* modal windows */
+
+@import 'components/modals';
+
+/* FAQ page */
+
+@import 'components/faq';
+
+/* partners page */
+
+@import 'components/partners';
+
+/* terms page */
+
+@import 'components/terms';
+
+/* bonjur */
+
+@import 'components/published';
+
+/* validation page */
+
+@import 'components/validation';
+
+/* registration page */
+
+@import 'components/registration';
+
+/*modifier page */
+
+@import 'components/modifier';
+// profil-modifier
+@import 'components/profil-modifier';
+
+/* profile preview */
+
+// profil-modifier
+@import 'components/profile-preview';
+
+//registraton-form
+@import 'components/registration-page';
+ 

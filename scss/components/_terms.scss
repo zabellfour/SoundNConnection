@@ -1,0 +1,40 @@
+.terms {
+    @extend .faq;
+    h3,
+    .h3 {
+        font-family: $font-family-lato-bold;
+        margin-bottom: 15px;
+    }
+    h5,
+    .h5 {
+        color: $modal-text-color;
+        font-family: $font-family-arial;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    ul,
+    .ol {
+        @include ul-reset();
+        line-height: 1.4;
+        font-size: inherit;
+        li {
+            font-size: $font-size-default;
+        }
+    }
+    .space{
+        margin-bottom: 15px;
+    }
+    &__list {
+        list-style: decimal;
+        padding-left: 20px;
+        font-family: $font-family-arial;
+        font-weight: bold;
+        font-size: $font-size-default;
+        li {
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+    }
+}

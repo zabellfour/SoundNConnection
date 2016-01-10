@@ -1,0 +1,18 @@
+.validation {
+    padding: $padding-page-def;
+    background: $bg-light;
+    margin-bottom: 20px;
+    font-size: $font-size-default;
+    color: $text-color;
+    min-height: 70vh;
+    h3,
+    .h3 {
+        text-align: center;
+        color: $inverse-text-color;
+    }
+    p {
+        font-size: $font-size-default;
+        font-family: $font-family-arial;
+        line-height: 1.4;
+    }
+}

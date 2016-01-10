@@ -1,0 +1,54 @@
+.button {
+    background: $brand-primary;
+    color: $inverse-text-color;
+    padding: 5px 13px;
+    font-family: $font-family-lato-light;
+    font-size: $font-size-small;
+    display: block;
+    text-align: center;
+    transition: color 0.3s, background 0.4s;
+    &:hover {
+        @include bg-color-var($inverse-text-color, $brand-primary);
+    }
+    &--left {
+        float: left;
+    }
+    &--right {
+        float: right;
+    }
+    &--big {
+        padding: 10px 0;
+        font-size: $font-size-large;
+        font-family: $font-family-lato-regular;
+    }
+    &--bold {
+        font-family: $font-family-lato-bold;
+        font-size: $font-size-default;
+    }
+    &--default {
+        font-size: $font-size-default;
+    }
+    &--valider {
+        width: 180px;
+    }
+    &--dn {
+        display: none;
+    }
+}
+
+button.button {
+    border: none;
+}
+
+button.close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-family: $font-family-lato-bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+        color: darken($modal-text-color, 10%);
+    }
+}

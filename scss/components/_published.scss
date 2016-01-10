@@ -1,0 +1,168 @@
+.published {
+    overflow: hidden;
+    @include respond-to(medium-low) {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    @extend .partners;
+    padding-bottom: 150px;
+    padding-top: 40px;
+    h3,
+    .h3 {
+        color: $titel-adv;
+        margin-bottom: 25px;
+    }
+    .info {
+        @include clearfix;
+        max-width: 550px;
+        .info-title {
+            font-family: $font-family-lato-bold;
+            font-size: $font-size-large;
+            color: $titel-adv;
+            @include respond-to(medium-low) {
+                font-size: 20px;
+            }
+        }
+        &__table {
+            h4.title1 {
+                @include respond-to(medium-low) {
+                    float: none;
+                    text-align: center;
+                }
+            }
+            width: 100%;
+            margin-bottom: 20px;
+            overflow: auto;
+            tr {
+                height: 24px;
+                vertical-align: top;
+                &:first-child {
+                    height: 58px;
+                    vertical-align: baseline;
+                    td {
+                        color: $inverse-text-color;
+                    }
+                }
+                td {
+                    color: $titel-adv;
+                    .info-table__data {
+                        display: inline-block;
+                        padding-left: 10px;
+                        color: $inverse-text-color;
+                        @include respond-to(medium-low) {
+                            display: table-row;
+                            height: 25px
+                        }
+                        .img-cell {
+                            padding: 0;
+                        }
+                    }
+                    .avatar-table-image {
+                        width: 64px;
+                        height: 64px;
+                        height: auto;
+                        float: right;
+                        @include respond-to(medium-height) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .button {
+            width: 64px;
+            font-family: $font-family-lato-regular;
+            @include respond-to(medium-low) {
+                float: none;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+hr.white_divider {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.advert-title {
+    font-family: $font-family-lato-bold;
+    font-size: $font-size-large;
+    color: $titel-adv;
+    margin: 0 0 25px;
+    display: inline-block;
+    @include respond-to(medium-low) {
+        text-align: center;
+    }
+}
+
+.advert {
+    background: $bg-advert;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 30px;
+    @include clearfix();
+    &__image {
+        float: left;
+        margin-right: 16px;
+        @include respond-to(medium-low) {
+            display: none;
+        }
+    }
+    &__title {
+        color: $titel-adv;
+        min-width: 300px;
+        font-family: $font-family-lato-bold;
+        margin-bottom: 18px;
+        font-size: $font-size-large;
+        
+        @include respond-to(medium-low) {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__list {
+        @include respond-to(medium-low) {
+            text-align: center;
+            float: none;
+        }
+        float: left;
+        @include ul-reset();
+        &__element {
+            &__icon {
+                display: inline-block;
+                font-family: $font-icon;
+                font-size: $font-size-nav;
+                line-height: 1.2;
+                &:before {
+                    vertical-align: middle;
+                }
+                &--eye:before {
+                    content: "\e904";
+                }
+                &--pen:before {
+                    content: "\e900";
+                }
+                &--basket:before {
+                    content: "\e903";
+                }
+            }
+            display: inline-block;
+            padding: 0 12px;
+            &__element:first-child {
+                padding-left: 0;
+            }
+            &__element:last-child {
+                padding-right: 0;
+            }
+            &__link {
+                text-decoration: underline;
+                font-family: $font-family-lato-regular;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

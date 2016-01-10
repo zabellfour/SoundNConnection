@@ -1,0 +1,107 @@
+    .filter {
+        background: $bg-filter;
+        padding: 35px 5%;
+        margin-bottom: 20px;
+        h4 {
+            margin-bottom: 30px;
+            @include respond-to(medium-low) {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        @include respond-to(medium-low) {
+            width: 74%;
+            margin: 0 auto 10px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            .button {
+                float: none; 
+                width: 100%;
+            }
+        }
+    }
+    
+    .form-holder {
+        @include clearfix();
+        &__list {
+            @include ul-reset();
+            margin-bottom: 30px;
+            &__element {
+                &__label {
+                    @extend .drop__label;
+                    color: $text-color;
+                    font-family: $font-family-lato-regular;
+                }
+                &:focus {
+                    outline: 0;
+                }
+                &__select {
+                    font-weight: 13px;
+                    @extend .drop__input;
+                    width: 100%;
+                    padding: 0 17px 0 3px;
+                    color: $brand-text-color-darken;
+                    font-family: $font-family-lato-regular;
+                    font-size: $font-size-default;
+                    -webkit-appearance: none;
+                    /* for FF */
+                    -moz-appearance: none;
+                    appearance: none;
+                    text-indent: 0.01px;
+                    text-overflow: '';
+                    /* for IE */
+                    -ms-appearance: none;
+                    appearance: none!important;
+                    background-image: url('../images/select.png');
+                    background-repeat: no-repeat;
+                    background-position: 95% center;
+                    &::-ms-expand {
+                        display: none;
+                    } 
+
+                }
+            }
+        }
+        .button {
+            font-size: $font-size-default;
+        }
+        .filter-clear {
+            float: right;
+            font-size: $font-size-default;
+            color: $brand-primary;
+            font-family: $font-family-lato-regular;
+            text-decoration: underline;
+            padding-top: 10px;
+            cursor: pointer; 
+            &:hover {
+                text-decoration: none;
+            }
+            @include respond-to(large) {
+                width: 100%;
+            }
+        }
+    }
+    
+    .information {
+        border: 2px solid $inverse-text-color;
+        padding: 22px 8%;
+        h5,
+        .h5 {
+            margin-bottom: 14px;
+        }
+        p {
+            font-family: $font-family-lato-regular;
+            line-height: 1.4;
+            margin: 0 0 18px;
+        }
+        .button {}
+        @include clearfix();
+        @include respond-to(medium-low) {
+            width: 81%;
+            margin: 0 auto;
+            padding: 10px 4%;
+            .button {
+                float: none;
+            }
+        }
+    }

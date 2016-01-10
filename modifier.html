@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>modifier</title>
+    <link rel="stylesheet" href="css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+              <a href="#" class="logo__link">SoundConnection</a>
+            </h1>
+            <div class="side-block">
+                <nav class="side-block__navigation">
+                    <ul class="side-block__navigation__list">
+                        <li class="side-block__navigation__list__element">
+                            <a href="main.html" class="side-block__navigation__list__element__link">accueil</a>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="#" class="side-block__navigation__list__element__link" data-toggle="modal" data-target="#contact-us">contact</a>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="faq.html" class="side-block__navigation__list__element__link">aide</a>
+                        </li>
+                        <li class="side-block__navigation__list__element side-block__navigation__list__element--dn side-block__navigation__list__element--dropdown">
+                            <a href="#" class="side-block__navigation__list__element__link">se connecter</a>
+                            <form action="#">
+                                <div class="drop">
+                                    <label class="drop__label">Pseudo</label>
+                                    <input name="login" class="drop__input" type="text" value="">
+                                    <label class="drop__label">Mot de passe</label>
+                                    <input name="pass" class="drop__input" type="password" value="">
+                                    <button class="button button--left">Se connecter</button>
+                                    <a href="#" class="drop__link" data-toggle="modal" data-target="#forgot-pass">oublié?</a>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="side-block__navigation__list__element">
+                            <a href="#" class="side-block__navigation__list__element__link side-block__navigation__list__element__link--exit">déconnexion</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="registration-form.html" class="button button--dn button--big">Publie votre annonce</a>
+                <a href="profil-modifier.html" class="button  button--big">Accès à votre profil</a>
+            </div>
+        </header>
+        <div class="category">
+            <h2 class="h2">JE CHERCHE</h2>
+            <ul class="category__list">
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN PROF</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN ELEVE</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN GROUPE</a>
+                </li>
+                <li class="category__list__element">
+                    <a href="#" class="category__list__element__link">UN MUSICIEN</a>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <div class="modifier">
+                <h3 class="h3">Modifier votre annonce n°1</h3>
+                <form action="#">
+                    <div class="form-inner">
+                        <div class="group-input">
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Pseudo*</label>
+                                <input name="pseudo" class="group-input__row__input group-input__row__input" type="text" value="Name" readonly>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Département*</label>
+                                <select name="departement" class="group-input__row__input group-input__row__input--select" required>
+                                    <option value="">Ain</option>
+                                    <option>Ain</option>
+                                    <option>Aisne</option>
+                                    <option>Allier</option>
+                                    <option value="Alpes-de-Haute-Provence">Alpes-de-Haute-Prov.</option>
+                                    <option>Alpes-Maritimes</option>
+                                    <option>Ardèche</option>
+                                    <option>Ardennes</option>
+                                    <option>Ariège</option>
+                                    <option>Aube</option>
+                                    <option>Aude</option>
+                                    <option>Aveyron</option>
+                                    <option>Bas-Rhin</option>
+                                    <option>Bouches-du-Rhône</option>
+                                    <option>Calvados</option>
+                                    <option>Cantal</option>
+                                    <option>Charente</option>
+                                    <option>Charente-Maritime</option>
+                                    <option>Cher</option>
+                                    <option>Corrèze</option>
+                                    <option>Corse-du-Sud</option>
+                                    <option>Côte-d'Or</option>
+                                    <option>Côtes-d'Armor</option>
+                                    <option>Creuse</option>
+                                    <option>Deux-Sèvres</option>
+                                    <option>Dordogne</option>
+                                    <option>Doubs</option>
+                                    <option>Drôme</option>
+                                    <option>Essonne</option>
+                                    <option>Eure</option>
+                                    <option>Eure-et-Loir</option>
+                                    <option>Finistère</option>
+                                    <option>Gard</option>
+                                    <option>Gers</option>
+                                    <option>Gironde</option>
+                                    <option>Guadeloupe</option>
+                                    <option>Guyane</option>
+                                    <option>Haute-Corse</option>
+                                    <option>Haute-Garonne</option>
+                                    <option>Haute-Loire</option>
+                                    <option>Haute-Marne</option>
+                                    <option>Hautes-Alpes</option>
+                                    <option>Haute-Saône</option>
+                                    <option>Haute-Savoie</option>
+                                    <option>Hautes-Pyrénées</option>
+                                    <option>Haute-Vienne</option>
+                                    <option>Haut-Rhin</option>
+                                    <option>Hauts-de-Seine</option>
+                                    <option>Hérault</option>
+                                    <option>Ille-et-Vilaine</option>
+                                    <option>Indre</option>
+                                    <option>Indre-et-Loire</option>
+                                    <option>Isère</option>
+                                    <option>Jura</option>
+                                    <option>La Réunion</option>
+                                    <option>Landes</option>
+                                    <option>Loire</option>
+                                    <option>Loire-Atlantique</option>
+                                    <option>Loiret</option>
+                                    <option>Loir-et-Cher</option>
+                                    <option>Lot</option>
+                                    <option>Lot-et-Garonne</option>
+                                    <option>Lozère</option>
+                                    <option>Maine-et-Loire</option>
+                                    <option>Manche</option>
+                                    <option>Marne</option>
+                                    <option>Martinique</option>
+                                    <option>Mayenne</option>
+                                    <option>Mayotte</option>
+                                    <option>Meurthe-et-Moselle</option>
+                                    <option>Meuse</option>
+                                    <option>Morbihan</option>
+                                    <option>Moselle</option>
+                                    <option>Nièvre</option>
+                                    <option>Nord</option>
+                                    <option>Oise</option>
+                                    <option>Orne</option>
+                                    <option>Paris</option>
+                                    <option>Pas-de-Calais</option>
+                                    <option>Puy-de-Dôme</option>
+                                    <option>Pyrénées-Atlantiques</option>
+                                    <option>Pyrénées-Orientales</option>
+                                    <option>Rhône</option>
+                                    <option>Saône-et-Loire</option>
+                                    <option>Sarthe</option>
+                                    <option>Savoie</option>
+                                    <option>Seine-et-Marne</option>
+                                    <option>Seine-Maritime</option>
+                                    <option>Seine-Saint-Denis</option>
+                                    <option>Somme</option>
+                                    <option>Tarn</option>
+                                    <option>Tarn-et-Garonne</option>
+                                    <option>Territoire de Belfort</option>
+                                    <option>Val-de-Marne</option>
+                                    <option>Val-d'Oise</option>
+                                    <option>Var</option>
+                                    <option>Vaucluse</option>
+                                    <option>Vendée</option>
+                                    <option>Vienne</option>
+                                    <option>Vosges</option>
+                                    <option>Yonne</option>
+                                    <option>Yvelines</option>
+                                </select>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Profil*</label>
+                                <input name="profil" class="group-input__row__input group-input__row__input" type="text" value="Groupe" readonly>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Niveau*</label>
+                                <select name="niveau" class="group-input__row__input group-input__row__input--select" required>
+                                    <option value="">Débutant</option>
+                                    <option>Débutant</option>
+                                    <option>Intermédiaire</option>
+                                    <option>Avancé</option>
+                                    <option>Professionnel</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group-input">
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Ville*</label>
+                                <input name="ville" class="group-input__row__input" type="text" value="Ville" required>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Région*</label>
+                                <select name="region" class="group-input__row__input group-input__row__input--select" required>
+                                    <option value="">Alsace</option>
+                                    <option>Aquitaine</option>
+                                    <option>Auvergne</option>
+                                    <option>Bourgogne</option>
+                                    <option>Bretagne</option>
+                                    <option>Centre</option>
+                                    <option>Champagne-Ardenne</option>
+                                    <option>Corse</option>
+                                    <option>Franche-Comté</option>
+                                    <option>Guadeloupe</option>
+                                    <option>Guyane</option>
+                                    <option>Île-de-France</option>
+                                    <option>Languedoc-Roussillon</option>
+                                    <option>Limousin</option>
+                                    <option>Lorraine</option>
+                                    <option>Martinique</option>
+                                    <option>Mayotte</option>
+                                    <option>Midi-Pyrénées</option>
+                                    <option>Nord-Pas-de-Calais</option>
+                                    <option>Basse-Normandie</option>
+                                    <option>Haute-Normandie</option>
+                                    <option>Pays de la Loire</option>
+                                    <option>Picardie</option>
+                                    <option>Poitou-Charentes</option>
+                                    <option>PACA</option>
+                                    <option>La Réunion</option>
+                                    <option>Rhône-Alpes</option>
+                                </select>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Instrument*</label>
+                                <select name="instrument" class="group-input__row__input group-input__row__input--select" required>
+                                    <option value="">Accordéon</option>
+                                    <option>Alto</option>
+                                    <option>Banjo</option>
+                                    <option>Basse</option>
+                                    <option>Basson</option>
+                                    <option>Batterie</option>
+                                    <option>Bombarde</option>
+                                    <option>Bonga</option>
+                                    <option>Chant</option>
+                                    <option>Clarinette</option>
+                                    <option>Clavier</option>
+                                    <option>Contrebasse</option>
+                                    <option>Cor</option>
+                                    <option>Cornemuse</option>
+                                    <option>Cithare</option>
+                                    <option>Didjeridoo</option>
+                                    <option>DJ</option>
+                                    <option>Djembe</option>
+                                    <option>Flûte à bec</option>
+                                    <option>Flûte de pan</option>
+                                    <option>Flûte traversière</option>
+                                    <option>Guitare</option>
+                                    <option>Harmonica</option>
+                                    <option>Harpe</option>
+                                    <option>Hautbois</option>
+                                    <option>Luth</option>
+                                    <option>Mandol</option>
+                                    <option>MAO</option>
+                                    <option>Orgue</option>
+                                    <option>Percussions</option>
+                                    <option>Piano</option>
+                                    <option>Saxophone</option>
+                                    <option>Trombone</option>
+                                    <option>Trompette</option>
+                                    <option>Tuba</option>
+                                    <option>Vielle</option>
+                                    <option>Violon</option>
+                                    <option>Violoncelle</option>
+                                </select>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Genre musical*</label>
+                                <select name="genremusical" class="group-input__row__input group-input__row__input--select" required>
+                                    <option value="">Acapella</option>
+                                    <option>A CAPPELA</option>
+                                    <option>ACID</option>
+                                    <option>ACOUSTIQUE</option>
+                                    <option>AFROBEAT</option>
+                                    <option>AMBIANCE</option>
+                                    <option>AUTRE</option>
+                                    <option>BACHATA</option>
+                                    <option>BEBOP</option>
+                                    <option>BIG BEAT</option>
+                                    <option>BLACK METAL</option>
+                                    <option>BLUE BEAT</option>
+                                    <option>BLUE GRASS</option>
+                                    <option>BLUES</option>
+                                    <option>BOOGIE</option>
+                                    <option>BOSSA NOVA</option>
+                                    <option>CAJUN</option>
+                                    <option>CALYPSO</option>
+                                    <option>CELTIQUE</option>
+                                    <option>CHANSON FRANCAISE</option>
+                                    <option>CLASSIQUE</option>
+                                    <option>COUNTRY</option>
+                                    <option>COUPE DECALE</option>
+                                    <option>CRUNK</option>
+                                    <option>DANCE</option>
+                                    <option>DANCEHALL</option>
+                                    <option>DEATH METAL</option>
+                                    <option>DEEP HOUSE</option>
+                                    <option>DIRTY SOUTH</option>
+                                    <option>DISCO</option>
+                                    <option>DRUM &amp; BASS</option>
+                                    <option>DUB</option>
+                                    <option>ELECTRO</option>
+                                    <option>EXPERIMENTAL</option>
+                                    <option>FADO</option>
+                                    <option>FLAMENCO</option>
+                                    <option>FOLK</option>
+                                    <option>FUNK</option>
+                                    <option>GOSPEL</option>
+                                    <option>GOTHIQUE</option>
+                                    <option>GRUNGE</option>
+                                    <option>HIP HOP</option>
+                                    <option>HOUSE</option>
+                                    <option>INDIE</option>
+                                    <option>INSTRUMENTAL</option>
+                                    <option>JAZZ</option>
+                                    <option>JUMPSTYLE</option>
+                                    <option>MAO</option>
+                                    <option>MERENGUE</option>
+                                    <option>METAL</option>
+                                    <option>MUSIQUE ELECTRONIQUE</option>
+                                    <option>NEO METAL </option>
+                                    <option>POP</option>
+                                    <option>POP-ROCK</option>
+                                    <option>PSYCHEDELIQUE</option>
+                                    <option>PUNK</option>
+                                    <option>R'N'B</option>
+                                    <option>RAGGA</option>
+                                    <option>RAÏ</option>
+                                    <option>RAP</option>
+                                    <option>REGGAE</option>
+                                    <option>REGGAETON</option>
+                                    <option>ROCK</option>
+                                    <option>ROCKABILLY</option>
+                                    <option>ROCKSTEADY</option>
+                                    <option>ROOTS</option>
+                                    <option>SALSA</option>
+                                    <option>SAMBA</option>
+                                    <option>SKA</option>
+                                    <option>SWING</option>
+                                    <option>TANGO</option>
+                                    <option>TOUS STYLES</option>
+                                    <option>VARIETE</option>
+                                    <option>WORLD</option>
+                                    <option>ZOUK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="titel-group">
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Titre de l'annonce*</label>
+                                <input name="titre" class="group-input__row__input group-input__row__input--radius" type="text" value="" required>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Votre annonce*</label>
+                                <textarea name="annonce" class="group-input__row__input group-input__row__input--text group-input__row__input--radius" required></textarea>
+                            </div>
+                            <div class="group-input__row">
+                                <label class="group-input__row__label">Lien vidéo</label>
+                                <input name="lienvideo" class="group-input__row__input group-input__row__input--radius" type="text" value="" required>
+                            </div>
+                        </div>
+                        <div class="upload">
+                            <h6 class="h6">Сharger une photo (.jpg et max 2000 pixels)</h6>
+                            <div class="upload__row">
+                                <label class="upload__row__label">Photo 1</label>
+                                <div class="upload__row__wrp">
+                                    <div class="upload__row__wrp__text">Choisissez le fichier</div>
+                                    <input name="photo1" type="file" name="file" size="1" class="upload__row__wrp__input">
+                                </div>
+                                <span class="upload__row__check"></span>
+                            </div>
+                            <div class="upload__row">
+                                <label class="upload__row__label">Photo 2</label>
+                                <div class="upload__row__wrp">
+                                    <div class="upload__row__wrp__text">Choisissez le fichier</div>
+                                    <input name="photo2" type="file" name="file" size="1" class="upload__row__wrp__input">
+                                </div>
+                                <span class="upload__row__check"></span>
+                            </div>
+                            <div class="upload__row">
+                                <label class="upload__row__label">Photo 3</label>
+                                <div class="upload__row__wrp">
+                                    <div class="upload__row__wrp__text">Choisissez le fichier</div>
+                                    <input name="photo3" type="file" name="file" size="1" class="upload__row__wrp__input">
+                                </div>
+                                <span class="upload__row__check"></span>
+                            </div>
+                            <button class="button button--valider  button--default">Valider</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="copy">Copyright 2012 Sound'n Connection</div>
+        <nav class="footer-nav">
+            <ul class="footer-nav__list">
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Accueil</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Nous contacter</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link">Aide</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link"> Mention légales</a></li>
+                <li class="footer-nav__list__element"> <a href="#" class="footer-nav__list__element__link"> Partenaires</a></li>
+            </ul>
+        </nav>
+        <ul class="social-list">
+            <li class="social-list__element">
+                <a class="icon icon-twitter-square" href="#"></a>
+            </li>
+            <li class="social-list__element">
+                <a class="icon icon-facebook" href="#"></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Modal -->
+    <!-- Modal forgop pass-->
+    <div class="modal fade" id="forgot-pass" tabindex="-1" role="dialog" aria-labelledby="forgot-pass">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-universal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Mot de passe oublié</h6>
+                </div>
+                <div class="modal-body">
+                    <p>Envoyer votre mot de passe sur votre mail , remplir le formulaire :</p>
+                    <form action="#">
+                        <div class="drop drop--visible">
+                            <label class="drop__label">Nom/ Pseudo *</label>
+                            <input name="login" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Email *</label>
+                            <input name="mail" class="drop__input" type="email" value="" required>
+                            <div class="button-wrapper">
+                                <button class="button button--left">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contact-us-->
+    <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="contact-us">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-universal modal-universal--contact">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Formulaire de contact</h6>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="drop drop--visible">
+                            <label class="drop__label">Nom/ Pseudo *</label>
+                            <input name="pseudo" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Email *</label>
+                            <input name="mail2" class="drop__input" type="email" value="" required>
+                            <label class="drop__label">Sujet *</label>
+                            <input name="sujet" class="drop__input" type="text" value="" required>
+                            <label class="drop__label">Votre message *</label>
+                            <textarea name="message" class="drop__input" required></textarea>
+                            <div class="button-wrapper">
+                                <button class="button button--left">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+     <script src="js/upload_check.js"></script>
+</body>
+
+</html>

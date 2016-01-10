@@ -1,0 +1,181 @@
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto;
+    outline: 0;
+    overflow: auto;
+    // When fading in the modal, animate it to slide down
+    &.fade .modal-dialog {
+        @include translate(0, -25%);
+        @include transition-transform(0.3s ease-out);
+    }
+    &.in .modal-dialog {
+        @include translate(0, 0)
+    }
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+// Actual modal
+.modal-content {
+    position: relative;
+    background-color: $bg-modal;
+    background-clip: padding-box;
+    // Remove focus outline from opened modal
+    outline: 0;
+    margin: 0 auto;
+}
+
+// Modal background
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    background-color: $bg-under-modal;
+    z-index: 90;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+
+/* contact-us modal */
+
+.modal-universal {
+    width: 224px;
+    margin: 0 auto;
+    color: $titel-adv;
+    padding: 30px 34px;
+    .modal-title {
+        color: $inverse-text-color;
+        font-size: $font-size-titel-modal;
+        font-family: $font-family-lato-bold;
+        margin-bottom: 10px;
+    }
+    .modal-body {
+        color: $titel-adv;
+        p {
+            color: $modal-text-color-alt;
+            font-size: $font-size-small;
+            line-height: 1.2;
+            font-family: $font-family-lato-regular;
+            margin: 0 0 15px;
+        }
+        .drop{
+            
+            right: 0;
+        }
+        .drop--visible {
+            position: relative;
+            display: block;
+            visibility: visible;
+            padding: 0;
+            width: 100%;
+            color: inherit;
+            background: none;
+            .drop__label {
+                color: inherit;
+            }
+            input {
+                margin-bottom: 7px;
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+            .button-wrapper {
+                text-align: center;
+                .button {
+                    margin-top: 13px;
+                    display: inline;
+                    float: none;
+                    font-size: $font-size-default;
+                }
+            }
+        }
+    }
+    &--contact {
+        h6 {
+            text-align: center;
+        }
+        overflow: auto;  
+
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 450px;
+        @include respond-to(medium-low) {
+            width: 224px;
+            padding-left:25px;
+            padding-right: 25px;
+        }
+        .drop--visible {
+            input:last-of-type {
+                margin-bottom: 7px;
+            }
+            textarea {
+                height: 210px;
+                resize: none;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+        }
+        .button {
+            width: 100px;
+        }
+    }
+    &--advice {
+
+        width: 430px;
+        @include respond-to(medium-low) {
+            width: 80%;
+            min-width: 240px;
+        }
+        padding: 20px;
+        .modal-totle {
+            font-size: $font-size-titel-modal;
+            margin-bottom: 20px;
+        }
+        dl {
+            color: $inverse-text-color;
+            font-size: $font-size-default;
+            font-family: $font-family-lato-regular;
+            line-height: 1.2;
+        }
+        dd {
+            margin: 0 0 18px;
+        }
+        label {
+            color: $inverse-text-color;
+            font-size: $font-size-default;
+            font-family: $font-family-lato-regular;
+        }
+        input {
+            vertical-align: middle;
+        }
+        margin-top: 90px;
+    }
+}

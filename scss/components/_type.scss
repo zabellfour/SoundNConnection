@@ -1,0 +1,68 @@
+//
+// Typography
+// --------------------------------------------------
+// Headings
+// -------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+h1,
+.h1 {
+    font-size: $font-size-default;
+}
+
+h2,
+.h2 {
+    font-size: $font-size-h2;
+    color: $text-color;
+    font-family: $font-family-lato-regular;
+}
+
+h3,
+.h3 {
+    font-size: $font-size-h3;
+    color: $brand-text-color-light;
+    font-family: $font-family-lato-regular;
+}
+
+h4,
+.h4 {
+    font-size: $font-size-h4;
+    color: $brand-primary;
+    font-family: $font-family-lato-bold;
+}
+
+h5,
+.h5 {
+    font-family: $font-family-lato-bold;
+    font-size: $font-size-h5;
+    color: $inverse-text-color;
+}
+
+h6,
+.h6 {
+    font-size: $font-size-h6;
+    color: $text-color;
+    font-family: $font-family-base;
+}
+
+// Body text
+// -------------------------
+p {
+    font-size: $font-size-small;
+    color: $inverse-text-color;
+}

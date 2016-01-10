@@ -1,0 +1,80 @@
+footer.footer {
+    background: $bg-light;
+    position: relative;
+    padding: 17px 15px;
+    font-family: $font-family-lato-regular;
+    font-size: $font-size-small;
+    color: $inverse-text-color;
+    line-height: 26px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+    @include respond-to(large) {
+        text-align: center;
+    }
+    .copy {
+        float: left;
+        @include respond-to(large) {
+            width: 100%;
+            float: none;
+        }
+    }
+    .social-list {
+        position: relative;
+        z-index: 101;
+        @include respond-to(large) {
+            width: 100%;
+            margin-top: 10px;
+        }
+        @include ul-reset();
+        float: right;
+        font-size: 0;
+        line-height: 1;
+        &__element {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 26px;
+            .icon {
+                font-family: $font-icon;
+                color: $social-color;
+                transition: color 0.3s, background 0.4s;
+                &:hover {
+                    color: darken($social-color, 30%)
+                }
+            }
+            .icon-twitter-square:before {
+                content: "\e901";
+            }
+            .icon-facebook:before {
+                content: "\e902";
+            }
+        }
+    }
+    .footer-nav {
+        position: absolute;
+        left: 50%;
+        z-index: 100;
+        @include respond-to(large) {
+            position: static;
+            left: auto;
+        }
+        &__list {
+            @include ul-reset();
+            margin-left: -50%;
+            @include respond-to(large) {
+                margin-left: 0;
+            }
+            &__element {
+                display: inline-block;
+                padding: 0 9px;
+                vertical-align: middle;
+                &__link {
+                    transition: color 0.3s, background 0.4s;
+                    &:hover {
+                        color: darken($inverse-text-color, 20%);
+                    }
+                }
+            }
+        }
+    }
+}

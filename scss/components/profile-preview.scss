@@ -1,0 +1,46 @@
+.profile-preview {
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+    .media {
+        display: inline-block;
+        width: 335px;
+        @include respond-to(medium-low) {
+            width: 280px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .block-youtube {}
+        .liste-video {
+            .image-video { 
+                display: inline-block;  
+                padding: 20px 3px;
+            }
+        }
+    }
+    @extend .published;
+    h4.title1 {
+        font-size: $font-size-titel-modal;
+        color: $inverse-text-color;
+    }
+    .preview-advert {
+        @include ul-reset();
+        color: $inverse-text-color;
+        font-size: $font-size-default;
+        font-family: $font-family-sans-serif;
+        li {
+            margin-bottom: 20px; 
+        }
+    }
+    .info {
+        float: left; 
+        text-align: left;
+        margin-bottom: 20px; 
+        width: 100%;
+        .button {
+            float: none;
+            margin: 0 auto;
+            width: 160px;
+        }
+    }
+}

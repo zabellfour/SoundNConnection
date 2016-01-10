@@ -1,0 +1,337 @@
+.registration {
+    padding: $padding-page-def;
+    background: $bg-light;
+    margin-bottom: 20px;
+    font-size: $font-size-default;
+    color: $text-color;
+    min-height: 70vh;
+    font-family: $font-family-arial;
+    padding-left: 4%;
+    padding-right: 4%;
+    h3,
+    .h3 {
+        text-align: center;
+        color: $inverse-text-color;
+    }
+    strong {
+        font-weight: bold;
+        font-size: $font-size-large;
+    }
+    .color {
+        color: $brand-text-color-light;
+        font-size: $font-size-default;
+    }
+    ul {
+        padding: 0 0 0 20px;
+        color: $brand-text-color-light;
+        li {
+            margin-bottom: 15px;
+            color: $brand-text-color-light;
+            span {
+                color: #fff;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin: 3px 0 3px;
+                }
+            }
+        }
+    }
+    .reg-form {
+        .col-wrp {
+            @include clearfix();
+            float: left;
+            width: 435px;
+            @include respond-to(large) {
+                width: 435px;
+                overflow: hidden;
+                float: none;
+                margin: 0 auto 20px;
+            }
+            @include respond-to(medium-low) {
+                width: 100%;
+            }
+        }
+        @include clearfix();
+        .adv-form {
+            float: right;
+            width: 38%;
+            margin-right: 4%;
+            @include respond-to(large) {
+                width: 80%;
+                float: none;
+                margin: 0 auto 20px;
+            }
+        }
+        @include clearfix();
+        &__col {
+            &--fixed {
+                width: 195px;
+                padding-right: 10%;
+                margin-bottom: 30px;
+                float: left;
+                &:nth-child(2n) {
+                    padding-right: 0;
+                }
+                @include respond-to(medium-low) {
+                    
+                    margin: 0 auto;
+                    float: none;
+                    padding: 0;
+                }
+            }
+            &--max-w {
+                width: 350px;
+            }
+            &__label {
+                margin: 0 0 3px;
+                display: block;
+                font-family: $font-family-lato-regular;
+                font-size: 14px;
+                line-height: 1.1;
+                &--l-indent {
+                    margin-left: 10px;
+                }
+            }
+            &__row {
+                &--left {
+                    float: left;
+                }
+                &--right {
+                    float: right;
+                }
+            }
+            &__input {
+                &--radius {
+                    border-radius: 5px;
+                }
+                border: none;
+                width: 90%;
+                height: 24px;
+                padding: 0 5%;
+                font-size: $font-size-default;
+                margin-bottom: 8px;
+                outline: none;
+                color: $text-color-normal;
+                background-color: $bg-input;
+                font-family: $font-family-lato-regular;
+                -webkit-box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+                -moz-box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+                box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+                &[type="password"]:read-only {
+                    background: $bg-pass-input;
+                }
+                &[type="text"]:read-only {
+                    background: $bg-pass-input;
+                }
+                &__textarea {
+                    height: 316px;
+                    resize: none;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                &--chk {
+                    line-height: 26px;
+                    vertical-align: middle;
+                    height: 26px;
+                    display: inline-block;
+                    margin-bottom: 8px;
+                    &:before {
+                        margin-right: 5px;
+                    }
+                }
+                &--medium {
+                    width: 95px;
+                }
+                &--medium-low {
+                    width: 60px;
+                }
+                &--left {
+                    float: left;
+                }
+                &--tel {
+                    width: 105px;
+                    padding: 0 5px;
+                    float: left;
+                    margin-right: 10px;
+                    color: $text-color-normal;
+                }
+                &__select {
+                    width: 100%;
+                    &--auto {
+                        width: auto;
+                    }
+                    &--w40 {
+                        width: 45px;
+                        margin-right: 10px;
+                    }
+                    &--w85 {
+                        width: 85px;
+                    }
+                    &--brand-bg {
+                        background-color: $bg-select-brand;
+                    }
+                    padding: 0 13px 0 3px;
+                    -webkit-appearance: none;
+                    /* for FF */
+                    -moz-appearance: none;
+                    text-indent: 0.01px;
+                    text-overflow: '';
+                    /* for IE */
+                    -ms-appearance: none;
+                    appearance: none!important;
+                    background-image: url('../images/select.png');
+                    background-repeat: no-repeat;
+                    background-position: 95% center;
+                    &::-ms-expand {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.file-selected + .upload__row__check{
+    display: block;
+ 
+
+}
+.upload {
+    color: $text-color;
+    width: 315px;
+    float: left;
+    @include respond-to(large) {
+        width: 100%;
+    }
+    h6,
+    .h6 {
+        font-size: $font-size-default;
+        font-family: $font-family-lato-regular;
+        color: inherit;
+        margin-bottom: 15px;
+    }
+    &__row {
+        @include clearfix();
+        margin-bottom: 15px;
+        &__label {
+            color: $titel-adv;
+            float: left;
+            font-family: $font-family-lato-regular;
+            line-height: 24px;
+            margin-right: 8px;
+            font-size: $font-size-default;
+        }
+        &__wrp {
+            text-align: center;
+
+            width: 120px;
+            height: 20px;
+            border: 2px solid $text-color;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            &:hover {
+                border-color: darken($text-color, 20%);
+            }
+            &__text {
+                color: $text-color;
+                font-size: 12px;
+                line-height: 20px;
+                font-family: $font-family-lato-regular;
+            }
+            &__input {
+                margin-top: -22px;
+                margin-left: -2px;
+                -moz-opacity: 0;
+                filter: alpha(opacity=0);
+                opacity: 0;
+                font-size: 35px;
+                height: 24px;
+                
+
+            }
+        }
+        &__check {
+            float: right;
+            width: 18px;
+            height: 20px;
+            background: url('../images/chk-file.png');
+            display: none;
+        }
+    }
+}
+
+.bottom-form {
+    width: 440px;
+    float: none;
+    overflow: hidden;
+    @include respond-to(large) {
+        width: 300px;
+        margin: 0 auto;
+    }
+    @include respond-to(medium-height) {
+        width: 300px;
+        margin: 0 auto;
+    }
+    @include respond-to(medium-low) {
+        width: 270px;
+    }
+    @include respond-to(height) {
+        width: 360px;
+        margin: 0 auto;
+    }
+    &__row {
+        margin-bottom: 20px;
+        @include clearfix();
+    }
+    &__input {
+        margin: 6px 10px 0 0;
+        vertical-align: top;
+        display: inline-block;
+    }
+    &__label {
+        line-height: 1.5;
+        font-family: $font-family-lato-regular;
+        font-size: &font-size-small;
+        max-width: 90%;
+        display: inline-block;
+        font-size: $font-size-small;
+    }
+    h5,
+    .h5 {
+        color: $titel-adv;
+        font-size: $font-size-default;
+        line-height: 1.4;
+    }
+    .button {
+        @include respond-to(large) {
+            width: 100%;
+        }
+    }
+}
+
+input.custom-style {
+    position: absolute;
+    left: -9999px;
+    &~label:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background: #fff;
+        border-radius: 3px;
+        margin-right: 18px;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-left: -30px;
+        margin-top: -3px;
+    }
+    &+label {
+        padding-left: 30px;
+    }
+    &:checked~label:before {
+        background: #fff url('../images/check-box.png')no-repeat -1px 1px;
+    }
+}

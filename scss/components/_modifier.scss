@@ -1,0 +1,129 @@
+.modifier {
+    padding: 25px 4%;
+    background: $bg-light;
+    margin-bottom: 40px;
+    h3,
+    .h3 {
+        color: $inverse-text-color;
+        font-family: $font-family-lato-regular;
+        margin-bottom: 18px;
+        text-align: center;
+        @include respond-to(medium-low) {
+            font-size: $font-size-medium;
+        }
+    }
+    .button {
+        @include respond-to(medium-height) {
+            width: 100%;
+        }
+    }
+    .form-inner {
+        @include clearfix();
+        .group-input {
+            @include respond-to(medium-height) {
+                width: 40%;
+                margin: 0 5% 7px;
+                float: left;
+            }
+            @include respond-to(medium-low) {
+                width: 90%;
+                float: none;
+                margin: 0 auto 20px
+            }
+            width: 23.5%;
+            margin: 0 6.8% 20px 0;
+            float: left;
+            &__row {
+                &__input {
+                    border: none;
+                    width: 90%;
+                    height: 24px;
+                    padding: 0 5%;
+                    font-size: $font-size-default;
+                    margin-bottom: 8px;
+                    outline: none;
+                    color: $text-color-normal;
+                    background-color: $bg-input;
+                    font-family: $font-family-lato-regular;
+                    -webkit-box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+                    -moz-box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+                    box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+                    &[type="password"]:read-only {
+                        background: $bg-pass-input;
+                    }
+                    &[type="text"]:read-only {
+                        background: $bg-pass-input;
+                    }
+                    &--radius {
+                        border-radius: 5px;
+                    }
+                    &--text {
+                        height: 225px;
+                        padding-top: 2.5px;
+                        padding-top: 2.5px;
+                        resize: none;
+                    }
+                    &--select {
+                        width: 100%;
+                        padding: 0 30px 0 3px;
+                        -webkit-appearance: none;
+                        /* for FF */
+                        -moz-appearance: none;
+                        text-indent: 0.01px;
+                        text-overflow: '';
+                        /* for IE */
+                        -ms-appearance: none;
+                        appearance: none!important;
+                        background-image: url('../images/select.png');
+                        background-repeat: no-repeat;
+                        background-position: 95% center;
+                        &::-ms-expand {
+                            display: none;
+                        }
+                    }
+                }
+                &__label {
+                    margin: 0 0 3px;
+                    display: block;
+                    font-family: $font-family-lato-regular;
+                    font-size: 14px;
+                    line-height: 1.1;
+                }
+            }
+        }
+        .titel-group {
+            width: 36.45%;
+            float: right;
+            @include respond-to(medium-height) {
+                width: 50%;
+                margin: 0 auto 20px;
+                float: none;
+            }
+            @include respond-to(medium-low) {
+                width: 90%;
+                margin: 0 auto 20px;
+                float: none;
+            }
+            label {
+                margin-left: 10px;
+            }
+            .box {
+                height: 100px;
+            }
+        }
+    }
+    .upload {
+        @include respond-to(large) {
+            float: left;
+            width: 315px;
+        }
+        @include respond-to(medium-height) {
+            float: none;
+            width: 315px;
+            margin: 0 auto;
+        }
+        @include respond-to(medium-low) {
+            width: 100%;
+        }
+    }
+}
